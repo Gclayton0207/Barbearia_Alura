@@ -2,14 +2,28 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <title>Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <h1 class="tituloPrincipal">Barbearia Alura</h1>
+            <div class="caixa">
+                 <h1><img src="logo.png"></h1>
+                <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                </nav>
+            </div>
         </header>
+        <main>
         <img id="banner" src="banner.jpg">
         <div class="principal">
             <h2 class="tituloCentralizado">Sobre a Barbearia Alura</h2>
@@ -25,7 +39,7 @@
 
     <div class="beneficios">
         <h3 class="tituloCentralizado">Beneficios</h3>
-        <ul>
+        <ul class="listaBeneficios">
             <li class="itens">Atendimento aos clientes</li>
             <li class="itens">Espaço diferenciado</li>
             <li class="itens">Localização</li>
@@ -33,5 +47,31 @@
         </ul>
         <img src="beneficios.jpg" class="imagembeneficios">
     </div>
+    <div class="feedbackClientes">
+        <h4 class="tituloCentralizado">Feedback dos Clientes</h4>
+            <ul class="feedback">
+                <li>
+                    <img class= "fotoCorte"  src="corte 1.jpg">
+                    <p class="nomeCliente">Arthur</p>
+                    <p class="comentarioCliente">"O resultado me surpeendeu, atendimento personalizado, com certeza voltarei mais vezes"</p>
+                </li>
+                <li>
+                    <img class= "fotoCorte"  src="corte 2.jpg">
+                    <p class="nomeCliente">Bernardo</p>
+                    <p class="comentarioCliente">"ficou muito top, gostei muito do corte, ambiente bem descontraido"</p>
+                </li>
+                <li>
+                    <img class= "fotoCorte"src="corte 3.jpg">
+                    <p class="nomeCliente">Caio</p>
+                    <p class="comentarioCliente">"corte impecavel, melhor barbearia da cidade"</p>
+                </li>
+            </ul>
+        </div>
+</main>
+    <footer>
+        <img src="logo-branco.png">
+        <p class="rodape"> 	
+            &copy; Copyright Barbearia Alura - 2021 - Desenvolvido por Giovanni Clayton </p>
+    </footer>
     </body>
 </html>
